@@ -1,0 +1,16 @@
+eureka:
+    client:
+        service-url:
+            #------ FOR DOCKER-COMPOSE!!! ------
+            # defaultZone: http://eureka-discovery:8761/eureka
+            defaultZone: http://localhost:8761/eureka
+logging:
+    level:
+        org:
+            springframework:
+                web: DEBUG
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
